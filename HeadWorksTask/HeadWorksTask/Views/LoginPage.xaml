@@ -11,12 +11,13 @@
     <Entry Placeholder="Login"
            Text="{Binding Login}"
            VerticalOptions="Center"
-           TextColor ="Aqua"
+           TextColor ="Red"
     />
     <Entry Placeholder="Password"
            Text="{Binding Password}"
            IsPassword="True"
-           VerticalOptions="Center"/>
+           VerticalOptions="Center"
+           TextColor ="Red"/>
     <Button Text ="Login" Clicked="OnButtonClick"/>
   </StackLayout>
 

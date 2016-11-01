@@ -7,12 +7,17 @@ namespace HeadWorksTask.ViewModels
     class StudentsPageViewModel : BaseViewModel
     {
         private IStudentsService _studentService;
-        private List<Student> StudentList;
+        private List<Student> studentList;
+
+        public List<Student> StudentList
+        {
+            get { return studentList; }
+        }
 
         public StudentsPageViewModel()
         {
             this._studentService = new StudentService();
-            StudentList = _studentService.GetAllStudents();
+            studentList = _studentService.GetAllStudents();
         }
     }
 }
