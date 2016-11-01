@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace HeadWorksTask
 {
@@ -13,7 +8,7 @@ namespace HeadWorksTask
         {
             InitializeComponent();
 
-            MainPage = new HeadWorksTask.MainPage();
+            MainPage = new NavigationPage (new HeadWorksTask.LoginPage());
         }
 
         protected override void OnStart()
